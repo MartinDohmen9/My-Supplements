@@ -1,0 +1,38 @@
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.containerItem {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.itemDetail{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.centrarTitulo{
+    justify-content: center;
+}
+
+.inlineDetail{
+    background-color: rgba(153, 159, 159, 0.876);
+    display: Flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.detalle{
+    margin: 10px;
+}
+
+.menosMargen{
+    margin: 0px;
+}

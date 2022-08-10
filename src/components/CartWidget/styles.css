@@ -1,0 +1,44 @@
+.cart-btn {
+    background:none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .cart-widget {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .button__badge {
+    font-size: x-small;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 2px 4px;
+  }
+  
+  .button {
+    font-size: 0.6rem;
+    top: 0.7rem;
+    right: 0.7rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+.containerCart {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-left: 5px;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .container{
+    margin-right: 2px;
+  }
+}

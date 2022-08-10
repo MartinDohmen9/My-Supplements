@@ -1,0 +1,72 @@
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.containerItem {
+
+    justify-content: center;
+}
+
+h1{
+    justify-content: center;
+    font-size: xx-large;
+} 
+
+.titulo{
+    text-align: center;
+}
+
+.box{
+    border: 1px solid rgba(16, 15, 15, 0.702)!important;
+    width: 1125px; height: 200px;
+    background-color: rgb(85, 83, 83);
+}
+
+.hoverEffect{
+    box-shadow: 0px 1px 2px rgb(0, 0, 0);
+    width: 99.9%;
+    align-items: center;
+}
+
+.hoverEffect:hover{
+    box-shadow: 0px 3px 8px rgb(0, 0, 0);
+    width: 100%;
+    align-items: center;
+}
+
+table{
+    table-layout: fixed;
+    width: 1000px;
+}
+
+tr{
+    width: 1000px; 
+    word-wrap: break-word;
+}
+
+@media (max-width: 1200px){
+    .box{
+        border: 1px solid rgba(16, 15, 15, 0.702)!important;
+        width: 825px; height: 200px;
+    }
+}
+
+@media (max-width: 900px){
+    .box{
+        border: 1px solid rgba(16, 15, 15, 0.702)!important;
+        width: 525px; height: 200px;
+    }
+}
+
+@media (max-width: 700px){
+    .box{
+        border: 1px solid rgba(16, 15, 15, 0.702)!important;
+        width: 325px; height: 200px;
+    }
+
+    .itemList{
+        width: 325px; height: 220px;
+    }
+}

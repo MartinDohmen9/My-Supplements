@@ -1,0 +1,187 @@
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 50px;
+    width: 160px;
+    margin-top: 5px;
+}
+
+.login{
+    display: block;
+    size: 30px;
+    margin-right: 10px;
+}
+
+h5{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.loginIcon{
+    width: 35px;
+    height: 35px;
+    padding: 0%;
+}
+
+.NavBar {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(7, 5, 12, 0.671);
+    align-items: center;
+}
+
+.NavBar > .nav-logo {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 15px;
+    color: azure;
+}
+
+.NavBar > .nav-items > a {
+    color: azure;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.NavBar > .nav-items > a:hover {
+    opacity: 1;
+}
+
+.NavBar > .nav-items > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: azure;
+    transition: all .45s;
+}
+
+.NavBar > .nav-items > a:hover::before {
+    width: 100%;
+}
+
+.NavBar > .nav-toggle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .NavBar > .nav-items {
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        background:rgba(7, 5, 12, 0.671);
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: all .45s;
+    }
+
+    .NavBar > .nav-items > a::before {
+        background: transparent;
+    }
+
+    .NavBar > .nav-items.open {
+        transform: translateX(0);
+    }
+
+    .NavBar > .nav-toggle {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    .nav-toggle > .bar {
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background-color: azure;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: azure;
+        border-radius: 2px;
+        transition: all 0.45s ease-in-out;
+    }
+
+    .nav-toggle > .bar::before {
+        width: 25px;
+        transform: translateY(-8px);
+        right: 0;
+    }
+
+    .nav-toggle > .bar::after {
+        width: 32px;
+        transform: translateY(8px);
+    }
+
+    .nav-toggle.open > .bar {
+        transform: translateX(-40px);
+        background: transparent;
+    }
+
+    .nav-toggle.open > .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+
+    .nav-toggle.open > .bar::after {
+        transform: rotate(-45deg) translate(26px, 26px);
+    }
+
+    .queryContainer{
+        justify-content: right;
+        display: flex;
+    }
+
+    .display{
+        margin-left: 0px;
+        display: flex;
+    }
+
+    h3{
+        margin-right: 0px;
+    }
+}
+
+.tienda{
+    color: azure;
+    margin-right: 20px;
+}
+
+.cartMap{
+    display: block;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .cartMap{
+        display: block;
+        margin-left: 5px;
+    }
+}

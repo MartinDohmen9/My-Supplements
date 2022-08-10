@@ -1,0 +1,34 @@
+.landing {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__badge {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  padding: 2px 4px;
+}
+
+.button {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  color: white;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .button {
+    top: 0.7rem;
+    right: 3.2rem;
+  }
+}
+
+body{
+  background-color: rgba(12, 13, 15, 0.642);
+}
